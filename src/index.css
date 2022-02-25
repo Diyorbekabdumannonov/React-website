@@ -12,9 +12,6 @@ body {
 
 @layer components {
     .navbarLink {
-        @apply py-[6px] px-4 font-bold text-[14px] text-white cursor-pointer
-    }
-    .wMedium {
-        @apply w-[34px] h-[31px] cursor-pointer
+        @apply py-[6px] px-4 font-bold text-[14px] text-white cursor-pointer flex items-center
     }
 }
