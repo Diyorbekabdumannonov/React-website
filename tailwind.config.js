@@ -8,6 +8,7 @@ module.exports = {
         blue: {
           medium: '#123B64',
           dark: '#011936',
+          light:'#63ADA6'
         },
         gray: {
           light: '#F2F3F4',
@@ -19,7 +20,8 @@ module.exports = {
         }
       },
       maxWidth: {
-        desktop:'1440px'
+        desktop: '1440px',
+        tablet: '1260px'
       }
     },
   },
