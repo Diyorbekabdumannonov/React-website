@@ -16,8 +16,8 @@ export default function Categories() {
     ]
 
     return (
-        <div className='flex justify-between items-center md:mx-[90px] 2xl:justify-center'>
-            <div className='flex my-[40px] overflow-hidden items-center'>
+        <div className='flex justify-between items-center 2xl:justify-center px-4'>
+            <div className='flex my-[40px] overflow-hidden items-center mr-4'>
                 <div className='flex items-center cursor-pointer  min-w-[max-content]'>
                     <Img src={search} />
                     <h3 className='font-medium text-[14px] text-blue-light ml-[8px]'>Related searches</h3>

@@ -1,0 +1,31 @@
+.container {
+    position: relative;
+    align-items: center;
+    width: auto;
+    cursor: pointer;
+    padding-left: 35px;
+}
+
+.container input {
+    position: absolute;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 8px;
+    background-color: #eee;
+}
+
+.container input:checked~.checkmark {
+    background-color: #123B64;
+    background-image: url(./../../assets/tick.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
