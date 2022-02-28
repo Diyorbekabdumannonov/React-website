@@ -7,7 +7,6 @@ import image from './../../assets/image.png'
 import tile from './../../assets/tile.png'
 import imageWhite from './../../assets/image-white.png'
 import tileBlue from './../../assets/tile-blue.png'
-import Tooltip from '../Tooltip'
 import { useState } from 'react'
 
 export default function Filter({ showCard, setShowCard }) {
@@ -16,8 +15,18 @@ export default function Filter({ showCard, setShowCard }) {
       <div className='bg-gray-medium py-[10px] px-[16px] rounded-[10px] flex flex-col mx-4 xl:flex-row 2xl:items-center justify-between items-start'>
         <div className='mx-auto xl:mx-0'>
           <div className='flex justify-center xl:inline-block'>
-            <Btn src={filter} rounded={"full"} bgColor={'blue-medium'} margin={'10px'}  />
-            <Btn src={saved} rounded={"full"} bgColor={'white'} margin={'10px'} />
+            <div id="tooltip-default" role="tooltip" className="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium  bg-[#DFE6EB] rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+              Open filters
+            </div>
+            <div data-tooltip-target="tooltip-default" className='inline-block'>
+              <Btn src={filter} rounded={"full"} bgColor={'blue-medium'} margin={'10px'} />
+            </div>
+            <div id="tooltip-default2" role="tooltip" className="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium  bg-[#DFE6EB] rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip">
+            My saved filters
+            </div>
+            <div data-tooltip-target="tooltip-default2" className='inline-block'>
+              <Btn src={saved} rounded={"full"} bgColor={'white'} margin={'10px'} />
+            </div>
           </div>
           <Checkbox option={'Exact expression (Phrase)'} />
           <Checkbox option={'All words (AND)'} />
