@@ -1,5 +1,4 @@
 import React from 'react'
-import Tooltip from '../Tooltip'
 
 export default function Btn({ bgColor, src, rounded, margin, setState, state }) {
     return (
